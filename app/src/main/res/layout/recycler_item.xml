@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center_vertical"
+        android:layout_alignParentLeft="true">
+
+        <TextView
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:id="@+id/profile_image"
+            android:layout_width="50dp"
+            android:text="k"
+            android:textSize="20dp"
+            android:textColor="#ffffff"
+            android:gravity="center"
+            android:layout_height="50dp"
+            android:background="@drawable/circlebg"/>
+
+        <!-- <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+             android:id="@+id/profile_image"
+             android:layout_width="96dp"
+             android:layout_height="96dp"
+             android:background="@drawable/circlebg"
+             android:padding="5dp"
+             app:civ_border_color="#FF000000"
+             app:civ_border_width="2dp" />-->
+
+        <RelativeLayout
+            android:layout_centerVertical="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/profile_image"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="      Kriti sannon "
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_below="@+id/name"
+                android:id="@+id/message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text=" hello  hello kriti how are you kriti how are you hello kriti how are you hello kriti how are you  hello kriti how are you"
+                android:textSize="18dp"
+                />
+
+            <TextView
+                android:layout_below="@+id/message"
+                android:id="@+id/time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginLeft="20dp"
+                android:gravity="left"
+                android:text="15m ago"
+                android:textSize="18dp" />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+</RelativeLayout>
